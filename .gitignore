@@ -1,0 +1,6 @@
+output_mosaics
+path_to_tiles
+processed_tiles
+*.png
+*.jpg
+*.psd
