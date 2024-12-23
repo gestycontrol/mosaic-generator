@@ -11,7 +11,7 @@ def configure_parameters(image_path, audio_path, grid_width=10):
     image_width, image_height = image.size
 
     # Dimensiones proporcionales al video (480p como referencia)
-    video_height = 480
+    video_height = 1080
     video_width = int((video_height / image_height) * image_width)
 
     # Duración total del video según la longitud de la canción
