@@ -64,7 +64,8 @@ def zoom_to_sector_frame(t, params, sector_index):
     lower = upper + sector_height
 
     cropped_image = params["image"].crop((left, upper, right, lower))
-    zoom_level = 1 + (t / params["zoom_duration_per_sector"])  # Zoom dinámico
+    zoom_ratio = 0.5
+    zoom_level = 1 + (t / params["zoom_duration_per_sector"]) * zoom_ratio  # Zoom dinámico
 
     resized_image = cropped_image.resize(
         (
