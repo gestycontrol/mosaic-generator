@@ -85,7 +85,7 @@ def zoom_to_sector_frame(t, params, sector_index):
     return np.array(cropped_zoom)
 
 def zoom_out_frame(t, params):
-    zoom_level = 1 + (1 - t / params["zoom_out_duration"]) * 4
+    zoom_level = 1 + (params["zoom_out_duration"] - t) / params["zoom_out_duration"] * 4
     resized_image = params["image"].resize(
         (
             int(params["image_width"] * zoom_level),
