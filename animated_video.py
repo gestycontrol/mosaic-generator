@@ -1,4 +1,3 @@
-<?php
 import argparse
 import numpy as np
 from moviepy.video.VideoClip import VideoClip
